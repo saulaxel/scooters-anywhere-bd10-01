@@ -1,5 +1,5 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
---@Fecha creación:  2021-12-09
+--@Fecha creación:  2021-12-08
 --@Descripción:     Borrar entidades creadas por motivos de pruebas
 
 drop table scooter_zona;
