@@ -1,5 +1,5 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
---@Fecha creación:  2021-12-09
+--@Fecha creación:  2021-12-08
 --@Descripción:     Creación de entidades
 
 create table marca(
@@ -88,43 +88,55 @@ create table tarjeta_credito(
     references usuario(usuario_id)
 );
 
-create table servicio_viaje(
-  servicio_viaje_id number(10, 0) not null,
+create table servicio(
+  servicio_id number(10, 0) not null,
   usuario_id number(10, 0) not null,
-  timestamp_inicio date not null,
+  tipo char(1) not null,
+  constraint servicio_servicio_id_pk primary key(servicio_id),
+  constraint servicio_usuario_id_fk foreign key(usuario_id)
+    references usuario(usuario_id),
+  constraint servicio_tipo_chk check(tipo in ('V', 'R', 'C'))
+  -- V = Viaje
+  -- R = Renta
+  -- C = reCarga
+);
+
+create table servicio_viaje(
+  servicio_id number(10, 0) not null,
   scooter_seleccionado_id number(10, 0) not null,
-  fecha_inicio generated always as (to_char(timestamp_inicio, 'dd/mm/yyyy')) virtual,
-  fecha_fin generated always as (to_char(timestamp_inicio + 8/24, 'dd/mm/yyyy')) virtual,
+  folio varchar2(13) not null,
+  fecha_inicio date not null,
+  fecha_fin generated always as (fecha_inicio + 8/24) virtual,
   hora_inicio generated always as (to_char(timestamp_inicio, 'hh24/mi/ss')) virtual,
-  constraint servicio_viaje_servicio_viaje_id_pk primary key(servicio_viaje_id),
+  constraint servicio_viaje_servicio_id_pk primary key(servicio_id),
+  constraint servicio_viaje_servicio_id_fk foreign key(servicio_id)
+    references servicio(servicio_id),
   constraint servicio_viaje_scooter_seleccionado_id_fk foreign key(scooter_seleccionado_id)
-    references scooter(scooter_id)
+    references scooter(scooter_id),
+  constraint servicio_viaje_folio_uk unique(folio)
 );
 
 create table servicio_renta(
-  servicio_renta_id number(10, 0) not null,
-  scooter_renta_id number(10,0) not null,
-  usuario_id number(10, 0) not null,
-  timestamp_inicio date not null,
+  servicio_id number(10, 0) not null,
+  scooter_id number(10,0) not null,
+  fecha_inicio date not null,
   numero_dias number(2,0) not null,
-  fecha_inicio generated always as (to_char(timestamp_inicio, 'dd/mm/yyyy')) virtual,
-  fecha_fin generated always as (to_char(timestamp_inicio + numero_dias, 'dd/mm/yyyy')) virtual,
-  constraint servicio_renta_servicio_renta_id primary key (servicio_renta_id),
-  constraint servicio_renta_scooter_renta_id_fk foreign key (scooter_renta_id)
+  fecha_fin generated always as (timestamp_inicio + numero_dias) virtual,
+  constraint servicio_renta_servicio_id_pk primary key (servicio_id),
+  constraint servicio_renta_servicio_id_fk foreign key(servicio_id)
+    references servicio(servicio_id),
+  constraint servicio_renta_scooter_id_fk foreign key (scooter_id)
     references scooter(scooter_id),
-  constraint servicio_renta_usuario_id_fk foreign key (usuario_id)
-    references usuario(usuario_id),
   constraint servicio_renta_numero_dias_chk check(numero_dias between 0 and 14)
 );
 
 create table servicio_recarga(
-  servicio_recarga_id number(10, 0) not null,
-  usuario_id number(10, 0) not null,
+  servicio_id number(10, 0) not null,
   clabe number(18, 0) not null,
   nombre_banco varchar2(40) not null,
-  constraint servicio_recarga_servicio_recarga_id_pk primary key (servicio_recarga_id),
-  constraint servicio_recarga_usuario_id_fk foreign key(usuario_id)
-    references usuario(usuario_id)
+  constraint servicio_recarga_servicio_id_pk primary key (servicio_id),
+  constraint servicio_recarga_servicio_id_fk foreign key(servicio_id)
+    references servicio(servicio_id)
 );
 
 create table scooter_servicio_recarga(
