@@ -28,8 +28,9 @@ create table scooter(
   codigo_acceso varchar2(40 char) not null,
   capacidad_maxima_kg number(6,2),
   marca_id number(10, 0) not null,
-  -- ultimo_gps_id number(10, 0) not null,
-  -- si el valor actual se va a guardar por separado o en scooter
+  ultima_fecha_gps date null,
+  ultima_latitud_gps number(10, 6) null,
+  ultima_longitud_gps number(10, 6) null,
   estado_id number(2, 0) not null,
   fecha_estado date not null,
   scooter_reemplazado_id number(10, 0) null,
@@ -56,14 +57,14 @@ create table historial_estado(
     references scooter(scooter_id)
 );
 
-create table gps_scooter(
-  gps_scooter_id number(10, 0) not null,
+create table posicion_gps(
+  posicion_gps_id number(10, 0) not null,
   scooter_id number(10, 0) not null,
   latitud number(10, 6) not null,
   longitud number(10, 6) not null,
   hora date not null,
-  constraint gps_scooter_gps_scooter_id_pk primary key(gps_scooter_id),
-  constraint gps_scooter_scooter_id_fk foreign key(scooter_id)
+  constraint posicion_gps_posicion_gps_id_pk primary key(posicion_gps_id),
+  constraint posicion_gps_scooter_id_fk foreign key(scooter_id)
     references scooter(scooter_id)
 );
 
