@@ -26,7 +26,7 @@ create table scooter(
   num_serie varchar2(40) not null,
   num_placa varchar2(40) not null,
   codigo_acceso varchar2(40 char) not null,
-  capacidad_maxima number(6,2),
+  capacidad_maxima_kg number(6,2),
   marca_id number(10, 0) not null,
   -- ultimo_gps_id number(10, 0) not null,
   -- si el valor actual se va a guardar por separado o en scooter
