@@ -30,6 +30,7 @@ create table scooter(
   marca_id number(10, 0) not null,
   -- ultimo_gps_id number(10, 0) not null,
   -- si el valor actual se va a guardar por separado o en scooter
+  --
   estado_id number(2, 0) not null,
   fecha_estado date not null,
   scooter_reemplazado_id number(10, 0) null,
@@ -107,7 +108,11 @@ create table servicio_viaje(
   folio varchar2(13) not null,
   fecha_inicio date not null,
   fecha_fin generated always as (fecha_inicio + 8/24) virtual,
-  hora_inicio generated always as (to_char(timestamp_inicio, 'hh24/mi/ss')) virtual,
+  hora_inicio generated always as (to_char(fecha_inicio, 'hh24/mi/ss')) virtual,
+  -- con dos atributos de tipo date
+  -- un atributo fecha inicio, y no poner hora de inicio porque llega hasta segundos
+  -- se puede representar todo esto con un atributo
+  --
   constraint servicio_viaje_servicio_id_pk primary key(servicio_id),
   constraint servicio_viaje_servicio_id_fk foreign key(servicio_id)
     references servicio(servicio_id),
@@ -121,7 +126,7 @@ create table servicio_renta(
   scooter_id number(10,0) not null,
   fecha_inicio date not null,
   numero_dias number(2,0) not null,
-  fecha_fin generated always as (timestamp_inicio + numero_dias) virtual,
+  fecha_fin generated always as (fecha_inicio + numero_dias) virtual,
   constraint servicio_renta_servicio_id_pk primary key (servicio_id),
   constraint servicio_renta_servicio_id_fk foreign key(servicio_id)
     references servicio(servicio_id),
