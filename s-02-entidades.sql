@@ -14,11 +14,11 @@ create table telefono_marca(
   constraint telefono_marca_pk primary key(marca_id, telefono)
 );
 
-create table estado(
-  estado_id number(2, 0) not null,
+create table status(
+  status_id number(2, 0) not null,
   clave varchar2(15) not null,
   descripcion varchar2(100 char) not null,
-  constraint estado_estado_id_pk primary key(estado_id)
+  constraint status_status_id_pk primary key(status_id)
 );
 
 create table scooter(
@@ -31,29 +31,29 @@ create table scooter(
   ultima_fecha_gps date null,
   ultima_latitud_gps number(10, 6) null,
   ultima_longitud_gps number(10, 6) null,
-  estado_id number(2, 0) not null,
-  fecha_estado date not null,
+  status_id number(2, 0) not null,
+  fecha_status date not null,
   scooter_reemplazado_id number(10, 0) null,
   constraint scooter_scooter_id_pk primary key(scooter_id),
   constraint scooter_marca_id_fk foreign key(marca_id)
     references marca(marca_id),
   constraint scooter_num_serie_uk unique(num_serie),
   constraint scooter_num_placa_uk unique(num_placa),
-  constraint scooter_estado_id_fk foreign key(estado_id)
-    references estado(estado_id),
+  constraint scooter_status_id_fk foreign key(status_id)
+    references status(status_id),
   constraint scooter_scooter_reemplazado_id foreign key(scooter_reemplazado_id)
     references scooter(scooter_id)
 );
 
-create table historial_estado(
-  historial_estado_id number(10, 0) not null,
-  estado_id number(2, 0) not null,
+create table historial_status(
+  historial_status_id number(10, 0) not null,
+  status_id number(2, 0) not null,
   scooter_id number(10, 0) not null,
-  fecha_estado date not null,
-  constraint historial_estado_historial_estado_id primary key(historial_estado_id),
-  constraint historial_estado_estado_id_fk foreign key(estado_id)
-    references estado(estado_id),
-  constraint historial_estado_scooter_id_fk foreign key(scooter_id)
+  fecha_status date not null,
+  constraint historial_status_historial_status_id primary key(historial_status_id),
+  constraint historial_status_status_id_fk foreign key(status_id)
+    references status(status_id),
+  constraint historial_status_scooter_id_fk foreign key(scooter_id)
     references scooter(scooter_id)
 );
 
@@ -160,7 +160,7 @@ create table reporte_falla(
   fecha_reporte date not null,
   latitud number(10, 6) null,
   longitud number(10, 6) null,
-  descripcion_falla varchar2(2000 char),
+  descripcion_falla varchar2(2000 char) null,
   constraint reporte_falla_reporte_falla_id_pk primary key(reporte_falla_id),
   constraint reporte_falla_usuario_id_fk foreign key(usuario_id)
     references usuario(usuario_id),
