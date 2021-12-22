@@ -9,6 +9,7 @@ create table marca(
 );
 
 create table telefono_marca(
+  telefono_marca_id number(10, 0) not null,
   marca_id number(10, 0) not null,
   telefono number(15, 0) not null,
   constraint telefono_marca_pk primary key(marca_id, telefono)
@@ -16,7 +17,7 @@ create table telefono_marca(
 
 create table status(
   status_id number(2, 0) not null,
-  clave varchar2(15) not null,
+  clave varchar2(15) not null, -- TODO Unique
   descripcion varchar2(100 char) not null,
   constraint status_status_id_pk primary key(status_id)
 );
@@ -72,7 +73,7 @@ create table usuario(
   usuario_id number(10, 0),
   nombre varchar2(40 char) not null,
   ap_paterno varchar2(40 char) not null,
-  ap_materno varchar2(40 char) not null,
+  ap_materno varchar2(40 char) not null, -- TODO: Checar si es NULL
   email varchar2(40) not null,
   contra varchar2(40 char) not null,
   constraint usuario_usuario_id_pk primary key(usuario_id)
