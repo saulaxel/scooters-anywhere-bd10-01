@@ -2,6 +2,8 @@
 --@Fecha creación:  2021-12-08
 --@Descripción:     Creación de entidades
 
+connect mp_proy_admin/mp
+
 create table marca(
   marca_id number(10, 0) not null,
   nombre varchar2(40 char),
@@ -107,7 +109,7 @@ create table servicio_viaje(
   servicio_id number(10, 0) not null,
   scooter_seleccionado_id number(10, 0) not null,
   folio varchar2(13) not null,
-  fecha_inicio date not null,
+  fecha_inicio date default sysdate not null,
   fecha_fin generated always as (fecha_inicio + 8/24) virtual,
   hora_inicio generated always as (to_char(fecha_inicio, 'hh24/mi/ss')) virtual,
   -- con dos atributos de tipo date
@@ -158,7 +160,7 @@ create table reporte_falla(
   reporte_falla_id number(10, 0) not null,
   usuario_id number(10, 0) not null,
   scooter_id number(10, 0) not null,
-  fecha_reporte date not null,
+  fecha_reporte date default sysdate not null,
   latitud number(10, 6) null,
   longitud number(10, 6) null,
   descripcion_falla varchar2(2000 char) null,
