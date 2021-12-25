@@ -19,8 +19,8 @@ create table telefono_marca(
 );
 
 create table status(
-  status_id number(2, 0) not null,
-  clave varchar2(15) not null,
+  status_id number(3, 0) not null,
+  clave varchar2(30) not null,
   descripcion varchar2(100 char) not null,
   constraint status_status_id_pk primary key(status_id),
   constraint status_clave_uk unique(clave)
@@ -36,7 +36,7 @@ create table scooter(
   ultima_fecha_gps date null,
   ultima_latitud_gps number(10, 6) null,
   ultima_longitud_gps number(10, 6) null,
-  status_id number(2, 0) not null,
+  status_id number(3, 0) not null,
   fecha_status date not null,
   scooter_reemplazado_id number(10, 0) null,
   constraint scooter_scooter_id_pk primary key(scooter_id),
@@ -52,7 +52,7 @@ create table scooter(
 
 create table historial_status(
   historial_status_id number(10, 0) not null,
-  status_id number(2, 0) not null,
+  status_id number(3, 0) not null,
   scooter_id number(10, 0) not null,
   fecha_status date not null,
   constraint historial_status_historial_status_id primary key(historial_status_id),
@@ -88,10 +88,11 @@ create table tarjeta_credito(
   usuario_id number(10, 0) not null,
   num_tarjeta number(16, 0) not null,
   AA number(2, 0) not null,
-  MM number(2, 0) not null, -- TODO check mes de 1-12
+  MM number(2, 0) not null,
   constraint tarjeta_credito_tarjeta_credito_id_pk primary key(tarjeta_credito_id),
   constraint tarjeta_credito_usuario_id_fk foreign key(usuario_id)
-    references usuario(usuario_id)
+    references usuario(usuario_id),
+  constraint tarjeta_credito_mm_chk check(MM >= 1 and MM <= 12)
 );
 
 create table servicio(
@@ -109,9 +110,9 @@ create table servicio(
 
 create table servicio_viaje(
   servicio_id number(10, 0) not null,
-  scooter_id number(10, 0) not null, -- TODO Cambiar el nombre el diagramas
+  scooter_id number(10, 0) not null, -- TODO Cambiar el nombre en diagramas
   folio varchar2(13) not null,
-  fecha_inicio date not null default sysdate,
+  fecha_inicio date default sysdate not null,
   fecha_fin generated always as (fecha_inicio + 8/24) virtual,
   hora_inicio generated always as (to_char(fecha_inicio, 'hh24/mi/ss')) virtual,
   -- con dos atributos de tipo date

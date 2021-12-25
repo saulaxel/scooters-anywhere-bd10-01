@@ -7,7 +7,7 @@ prompt creando usuario admin
 create user mp_proy_admin identified by mp
 quota unlimited on users;
 
-prompt creando usuario invitado 
+prompt creando usuario invitado
 create user mp_proy_invitado identified by mp;
 -- quota 1024m on users;
 
@@ -32,7 +32,3 @@ grant rol_invitado to mp_proy_invitado;
 
 prompt terminando script s-01-usuarios.sql
 disconnect
-
-
-
-

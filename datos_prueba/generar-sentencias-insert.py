@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import csv
 import sys
 from glob import glob
@@ -24,13 +27,15 @@ def csv_to_sql(table_name, filename):
     # Fill the table_name and column into every sentence right away, but
     # values will be different for each sentence
 
-    dml_format = ('insert into {table_name}({columns}) '
-                    'values ({table_name}_seq.nextval')
+    dml_format = ('insert into {table_name}({table_name}_id, {columns})\n'
+                    'values ({table_name}_seq.nextval, ')
+
     dml_format = dml_format.format(table_name=table_name, columns=columns)
-    dml_format += ', {other_values});\n'
+    dml_format += '{other_values});\n'
 
     for row in rows:
-        values = "'" + "', '".join(row) + "'"
+        escaped_row = [col.replace("'", "''") for col in row]
+        values = "'" + "', '".join(escaped_row) + "'"
         sentences.append(dml_format.format(other_values=values))
 
     return ''.join(sentences)
@@ -42,7 +47,7 @@ def main():
 
         # Just for test purposes, send everything to stdout instead of
         # destination file
-        out_file = sys.stdout
+        #out_file = sys.stdout
 
 
         # Header of the output file
@@ -50,6 +55,8 @@ def main():
             "--@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio\n"
             "--@Fecha creación:  2021-12-23\n"
             "--@Descripción:     Creación de entidades\n"
+            "\n"
+            "--connect mp_proy_admin/mp\n"
             "\n",
             file=out_file
         )
@@ -61,8 +68,6 @@ def main():
             table_name = filename[3:-4]
             extension = filename[-4:]
 
-            print(f"-- Insertions to table {table_name}", file=out_file)
-
 
             if extension == '.csv':
                 sql_code = csv_to_sql(table_name, filename)
@@ -72,6 +77,10 @@ def main():
             else:
                 print('Filename ignored: ', filename, file=sys.stderr)
                 continue
+
+
+            print(f"-- Insertions to table {table_name}", file=out_file)
+
 
             print(sql_code, file=out_file, end='\n\n')
 
