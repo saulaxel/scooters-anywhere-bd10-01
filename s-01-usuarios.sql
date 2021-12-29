@@ -18,10 +18,6 @@ grant create session to rol_admin;
 grant create table, create view, create public synonym, create synonym, create trigger,
 create sequence, create procedure to rol_admin;
 
-create or replace directory directorio
-as '/home/carlos/scooters-everywhere-bd10-01';
--- as '/home/saul/scooters-everywhere-bd10-01;'
-
 prompt crear rol invitado
 create role rol_invitado;
 grant create session to rol_invitado;

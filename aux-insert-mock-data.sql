@@ -681,312 +681,312 @@ values (servicio_seq.nextval, '124', 'V');
 
 
 -- Insertions to table servicio_viaje
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '77', '75', '9883898622', '05/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '80', '76', '0349182353', '17/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '83', '77', '7527844043', '10/12/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '86', '78', '7853005717', '16/06/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '89', '79', '0141480343', '03/05/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '92', '80', '4756747884', '27/08/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '95', '81', '8817591696', '13/06/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '98', '82', '3966705141', '07/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '101', '83', '6199055039', '14/05/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '104', '84', '3590788437', '24/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '107', '85', '7850498623', '07/06/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '110', '86', '6798145108', '24/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '113', '87', '2770597949', '21/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '116', '88', '9738185521', '08/06/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '119', '89', '5144635989', '07/07/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '122', '90', '4769247362', '17/09/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '125', '91', '9915331045', '07/01/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '128', '92', '3840028043', '30/08/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '131', '93', '1539671976', '16/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '134', '94', '8775710587', '16/11/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '137', '95', '9516119883', '19/07/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '140', '96', '3863832698', '14/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '143', '97', '5266879378', '11/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '146', '98', '6179969329', '06/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '149', '99', '1512951919', '20/02/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '152', '100', '1915554764', '23/05/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '155', '101', '2235923607', '13/08/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '158', '102', '0764489453', '16/05/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '161', '103', '0782714498', '04/05/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '164', '104', '8386512695', '02/03/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '167', '75', '0813839475', '27/09/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '170', '76', '1093774592', '30/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '173', '77', '0542102056', '27/01/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '176', '78', '5344796919', '09/11/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '179', '79', '8574571598', '18/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '182', '80', '6285241376', '01/01/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '185', '81', '8432229423', '15/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '188', '82', '5536107895', '15/08/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '191', '83', '9381614393', '09/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '194', '84', '3149245370', '29/08/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '197', '85', '0088460703', '17/02/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '200', '86', '7827335179', '18/10/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '203', '87', '6929604690', '16/02/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '206', '88', '9931392118', '08/01/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '209', '89', '2834770816', '07/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '212', '90', '3406178375', '01/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '215', '91', '7612742705', '18/04/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '218', '92', '4296055933', '14/07/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '221', '93', '5713925889', '29/06/21');
-insert into servicio_viaje(servicio_viaje_id, servicio_id, scooter_id, folio, fecha_inicio)
-values (servicio_viaje_seq.nextval, '224', '94', '2517639086', '14/09/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('77', '75', '9883898622', '05/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('80', '76', '0349182353', '17/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('83', '77', '7527844043', '10/12/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('86', '78', '7853005717', '16/06/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('89', '79', '0141480343', '03/05/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('92', '80', '4756747884', '27/08/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('95', '81', '8817591696', '13/06/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('98', '82', '3966705141', '07/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('101', '83', '6199055039', '14/05/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('104', '84', '3590788437', '24/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('107', '85', '7850498623', '07/06/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('110', '86', '6798145108', '24/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('113', '87', '2770597949', '21/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('116', '88', '9738185521', '08/06/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('119', '89', '5144635989', '07/07/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('122', '90', '4769247362', '17/09/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('125', '91', '9915331045', '07/01/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('128', '92', '3840028043', '30/08/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('131', '93', '1539671976', '16/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('134', '94', '8775710587', '16/11/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('137', '95', '9516119883', '19/07/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('140', '96', '3863832698', '14/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('143', '97', '5266879378', '11/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('146', '98', '6179969329', '06/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('149', '99', '1512951919', '20/02/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('152', '100', '1915554764', '23/05/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('155', '101', '2235923607', '13/08/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('158', '102', '0764489453', '16/05/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('161', '103', '0782714498', '04/05/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('164', '104', '8386512695', '02/03/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('167', '75', '0813839475', '27/09/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('170', '76', '1093774592', '30/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('173', '77', '0542102056', '27/01/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('176', '78', '5344796919', '09/11/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('179', '79', '8574571598', '18/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('182', '80', '6285241376', '01/01/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('185', '81', '8432229423', '15/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('188', '82', '5536107895', '15/08/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('191', '83', '9381614393', '09/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('194', '84', '3149245370', '29/08/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('197', '85', '0088460703', '17/02/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('200', '86', '7827335179', '18/10/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('203', '87', '6929604690', '16/02/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('206', '88', '9931392118', '08/01/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('209', '89', '2834770816', '07/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('212', '90', '3406178375', '01/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('215', '91', '7612742705', '18/04/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('218', '92', '4296055933', '14/07/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('221', '93', '5713925889', '29/06/21');
+insert into servicio_viaje(servicio_id, scooter_id, folio, fecha_inicio)
+values ('224', '94', '2517639086', '14/09/21');
 
 
 -- Insertions to table servicio_renta
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '75', '75', '08/10/21', '7');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '78', '76', '08/03/21', '11');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '81', '77', '18/06/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '84', '78', '28/12/20', '6');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '87', '79', '14/09/21', '9');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '90', '80', '26/03/21', '12');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '93', '81', '19/10/21', '10');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '96', '82', '05/07/21', '9');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '99', '83', '08/10/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '102', '84', '18/09/21', '7');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '105', '85', '08/04/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '108', '86', '09/08/21', '11');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '111', '87', '18/11/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '114', '88', '14/06/21', '10');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '117', '89', '17/05/21', '7');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '120', '90', '05/07/21', '10');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '123', '91', '06/12/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '126', '92', '17/12/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '129', '93', '19/05/21', '10');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '132', '94', '28/08/21', '12');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '135', '95', '01/08/21', '6');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '138', '96', '09/07/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '141', '97', '22/03/21', '12');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '144', '98', '26/11/21', '4');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '147', '99', '27/10/21', '2');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '150', '100', '24/02/21', '2');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '153', '101', '03/05/21', '6');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '156', '102', '26/08/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '159', '103', '31/01/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '162', '104', '10/10/21', '8');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '165', '75', '26/05/21', '2');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '168', '76', '18/03/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '171', '77', '13/03/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '174', '78', '18/07/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '177', '79', '22/07/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '180', '80', '13/03/21', '4');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '183', '81', '05/02/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '186', '82', '25/08/21', '11');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '189', '83', '24/02/21', '3');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '192', '84', '02/08/21', '1');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '195', '85', '12/10/21', '1');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '198', '86', '12/08/21', '13');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '201', '87', '13/03/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '204', '88', '23/04/21', '8');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '207', '89', '04/05/21', '6');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '210', '90', '21/09/21', '14');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '213', '91', '03/11/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '216', '92', '14/01/21', '6');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '219', '93', '03/04/21', '5');
-insert into servicio_renta(servicio_renta_id, servicio_id, scooter_id, fecha_inicio, numero_dias)
-values (servicio_renta_seq.nextval, '222', '94', '31/01/21', '2');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('75', '75', '08/10/21', '7');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('78', '76', '08/03/21', '11');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('81', '77', '18/06/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('84', '78', '28/12/20', '6');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('87', '79', '14/09/21', '9');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('90', '80', '26/03/21', '12');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('93', '81', '19/10/21', '10');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('96', '82', '05/07/21', '9');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('99', '83', '08/10/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('102', '84', '18/09/21', '7');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('105', '85', '08/04/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('108', '86', '09/08/21', '11');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('111', '87', '18/11/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('114', '88', '14/06/21', '10');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('117', '89', '17/05/21', '7');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('120', '90', '05/07/21', '10');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('123', '91', '06/12/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('126', '92', '17/12/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('129', '93', '19/05/21', '10');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('132', '94', '28/08/21', '12');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('135', '95', '01/08/21', '6');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('138', '96', '09/07/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('141', '97', '22/03/21', '12');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('144', '98', '26/11/21', '4');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('147', '99', '27/10/21', '2');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('150', '100', '24/02/21', '2');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('153', '101', '03/05/21', '6');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('156', '102', '26/08/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('159', '103', '31/01/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('162', '104', '10/10/21', '8');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('165', '75', '26/05/21', '2');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('168', '76', '18/03/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('171', '77', '13/03/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('174', '78', '18/07/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('177', '79', '22/07/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('180', '80', '13/03/21', '4');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('183', '81', '05/02/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('186', '82', '25/08/21', '11');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('189', '83', '24/02/21', '3');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('192', '84', '02/08/21', '1');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('195', '85', '12/10/21', '1');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('198', '86', '12/08/21', '13');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('201', '87', '13/03/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('204', '88', '23/04/21', '8');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('207', '89', '04/05/21', '6');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('210', '90', '21/09/21', '14');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('213', '91', '03/11/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('216', '92', '14/01/21', '6');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('219', '93', '03/04/21', '5');
+insert into servicio_renta(servicio_id, scooter_id, fecha_inicio, numero_dias)
+values ('222', '94', '31/01/21', '2');
 
 
 -- Insertions to table servicio_recarga
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '76', '8472646157', 'Hamill-Wuckert');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '79', '2732921130', 'Herman-Turner');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '82', '4848116805', 'Zemlak LLC');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '85', '5030540954', 'Dooley and Sons');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '88', '1185223479', 'Lehner, Smith and Hills');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '91', '9427931345', 'Veum-Bruen');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '94', '0462105350', 'Wisozk-Rogahn');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '97', '3251359320', 'Harris-Stracke');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '100', '9074629261', 'Bauch-Kub');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '103', '8770425329', 'Emmerich-Halvorson');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '106', '4034286482', 'Kautzer, Lesch and Keeling');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '109', '9552998166', 'Huel Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '112', '9100964743', 'Welch LLC');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '115', '4236496488', 'Hoppe, Schulist and Bartell');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '118', '1560034181', 'Bechtelar Group');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '121', '9502085051', 'Dickinson Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '124', '4107165167', 'Dooley-Purdy');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '127', '8395913575', 'Stracke-Schamberger');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '130', '8324640339', 'Orn and Sons');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '133', '7685728850', 'Raynor, Yost and Daniel');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '136', '0562790632', 'Reinger LLC');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '139', '9461120680', 'Cremin-Shields');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '142', '5535808911', 'Langosh, Satterfield and Hilll');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '145', '9740066135', 'Weissnat and Sons');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '148', '6458058853', 'Welch Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '151', '5442112828', 'Kassulke, Kreiger and Heidenreich');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '154', '0931630169', 'Jacobi Group');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '157', '6095056918', 'Mueller, Cole and Metz');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '160', '4483083236', 'Stehr-Gutkowski');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '163', '4926452421', 'Wunsch-Walker');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '166', '1608444104', 'Pfannerstill Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '169', '3663249352', 'Stroman Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '172', '5410131150', 'Lynch, Langosh and Botsford');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '175', '5265203443', 'Howe-Block');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '178', '8806705075', 'Runolfsson Inc');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '181', '3986431217', 'Pollich and Sons');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '184', '0999886533', 'Konopelski-Fisher');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '187', '2771763141', 'Fritsch Group');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '190', '2440654434', 'Frami-Trantow');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '193', '3701516421', 'Lubowitz-Torp');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '196', '9757145254', 'Schultz LLC');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '199', '6754204222', 'Price and Sons');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '202', '5317964865', 'Baumbach LLC');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '205', '1765356709', 'Koss-Tillman');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '208', '5463543224', 'Mosciski-Bruen');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '211', '3442731313', 'Schiller-Sanford');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '214', '4669927205', 'Stamm, Brakus and Gutmann');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '217', '4089147980', 'Paucek-Bergstrom');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '220', '9913574471', 'McKenzie, Baumbach and D''Amore');
-insert into servicio_recarga(servicio_recarga_id, servicio_id, clabe, nombre_banco)
-values (servicio_recarga_seq.nextval, '223', '4867628972', 'Hettinger and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('76', '8472646157', 'Hamill-Wuckert');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('79', '2732921130', 'Herman-Turner');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('82', '4848116805', 'Zemlak LLC');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('85', '5030540954', 'Dooley and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('88', '1185223479', 'Lehner, Smith and Hills');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('91', '9427931345', 'Veum-Bruen');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('94', '0462105350', 'Wisozk-Rogahn');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('97', '3251359320', 'Harris-Stracke');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('100', '9074629261', 'Bauch-Kub');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('103', '8770425329', 'Emmerich-Halvorson');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('106', '4034286482', 'Kautzer, Lesch and Keeling');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('109', '9552998166', 'Huel Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('112', '9100964743', 'Welch LLC');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('115', '4236496488', 'Hoppe, Schulist and Bartell');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('118', '1560034181', 'Bechtelar Group');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('121', '9502085051', 'Dickinson Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('124', '4107165167', 'Dooley-Purdy');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('127', '8395913575', 'Stracke-Schamberger');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('130', '8324640339', 'Orn and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('133', '7685728850', 'Raynor, Yost and Daniel');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('136', '0562790632', 'Reinger LLC');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('139', '9461120680', 'Cremin-Shields');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('142', '5535808911', 'Langosh, Satterfield and Hilll');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('145', '9740066135', 'Weissnat and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('148', '6458058853', 'Welch Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('151', '5442112828', 'Kassulke, Kreiger and Heidenreich');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('154', '0931630169', 'Jacobi Group');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('157', '6095056918', 'Mueller, Cole and Metz');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('160', '4483083236', 'Stehr-Gutkowski');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('163', '4926452421', 'Wunsch-Walker');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('166', '1608444104', 'Pfannerstill Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('169', '3663249352', 'Stroman Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('172', '5410131150', 'Lynch, Langosh and Botsford');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('175', '5265203443', 'Howe-Block');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('178', '8806705075', 'Runolfsson Inc');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('181', '3986431217', 'Pollich and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('184', '0999886533', 'Konopelski-Fisher');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('187', '2771763141', 'Fritsch Group');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('190', '2440654434', 'Frami-Trantow');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('193', '3701516421', 'Lubowitz-Torp');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('196', '9757145254', 'Schultz LLC');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('199', '6754204222', 'Price and Sons');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('202', '5317964865', 'Baumbach LLC');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('205', '1765356709', 'Koss-Tillman');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('208', '5463543224', 'Mosciski-Bruen');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('211', '3442731313', 'Schiller-Sanford');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('214', '4669927205', 'Stamm, Brakus and Gutmann');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('217', '4089147980', 'Paucek-Bergstrom');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('220', '9913574471', 'McKenzie, Baumbach and D''Amore');
+insert into servicio_recarga(servicio_id, clabe, nombre_banco)
+values ('223', '4867628972', 'Hettinger and Sons');
 
 
 -- Insertions to table scooter_servicio_recarga
