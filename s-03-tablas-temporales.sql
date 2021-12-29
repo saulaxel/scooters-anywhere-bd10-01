@@ -40,8 +40,8 @@ insert into servicios
     sc.nombre_banco as nombre_banco_servicio_recarga
   from
     servicio         s
-    left outer join servicio_viaje   sv on s.servicio_id = sv.servicio_id
-    left outer join servicio_renta   sr on s.servicio_id = sr.servicio_id
-    left outer join servicio_recarga sc on s.servicio_id = sc.servicio_id;
+    full outer join servicio_viaje   sv on s.servicio_id = sv.servicio_id
+    full outer join servicio_renta   sr on s.servicio_id = sr.servicio_id
+    full outer join servicio_recarga sc on s.servicio_id = sc.servicio_id;
     
 select * from servicios;

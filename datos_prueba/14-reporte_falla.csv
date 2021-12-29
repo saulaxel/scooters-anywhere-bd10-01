@@ -1,1 +1,19 @@
-{"error":"Free accounts are limited to 200 requests per day.  You can generate up to 1000000 records per day by upgrading to a Silver plan.  See http://www.mockaroo.com/api/docs for more information about usage limits."}
+usuario_id,scooter_id,fecha_reporte,latitud,longitud,descripcion_falla
+80,94,27/01/21,19.922113,70.491189,Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+83,83,27/06/21,19.033857,-47.09849,"Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."
+80,80,01/05/21,,,
+96,91,21/08/21,19.765021,53.575032,Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+93,87,16/10/21,19.832644,12.461128,"In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
+107,86,18/10/21,19.918731,-29.195817,"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."
+75,82,01/07/21,19.144166,-20.024695,"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi."
+104,75,03/02/21,19.320022,95.67389,"Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+81,76,25/08/21,19.245404,-91.223217,"Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+106,96,19/06/21,19.117696,-81.183246,"Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."

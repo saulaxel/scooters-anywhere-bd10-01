@@ -1,1 +1,51 @@
-{"error":"Free accounts are limited to 200 requests per day.  You can generate up to 1000000 records per day by upgrading to a Silver plan.  See http://www.mockaroo.com/api/docs for more information about usage limits."}
+servicio_id,clabe,nombre_banco
+76,8472646157,Hamill-Wuckert
+79,2732921130,Herman-Turner
+82,4848116805,Zemlak LLC
+85,5030540954,Dooley and Sons
+88,1185223479,"Lehner, Smith and Hills"
+91,9427931345,Veum-Bruen
+94,0462105350,Wisozk-Rogahn
+97,3251359320,Harris-Stracke
+100,9074629261,Bauch-Kub
+103,8770425329,Emmerich-Halvorson
+106,4034286482,"Kautzer, Lesch and Keeling"
+109,9552998166,Huel Inc
+112,9100964743,Welch LLC
+115,4236496488,"Hoppe, Schulist and Bartell"
+118,1560034181,Bechtelar Group
+121,9502085051,Dickinson Inc
+124,4107165167,Dooley-Purdy
+127,8395913575,Stracke-Schamberger
+130,8324640339,Orn and Sons
+133,7685728850,"Raynor, Yost and Daniel"
+136,0562790632,Reinger LLC
+139,9461120680,Cremin-Shields
+142,5535808911,"Langosh, Satterfield and Hilll"
+145,9740066135,Weissnat and Sons
+148,6458058853,Welch Inc
+151,5442112828,"Kassulke, Kreiger and Heidenreich"
+154,0931630169,Jacobi Group
+157,6095056918,"Mueller, Cole and Metz"
+160,4483083236,Stehr-Gutkowski
+163,4926452421,Wunsch-Walker
+166,1608444104,Pfannerstill Inc
+169,3663249352,Stroman Inc
+172,5410131150,"Lynch, Langosh and Botsford"
+175,5265203443,Howe-Block
+178,8806705075,Runolfsson Inc
+181,3986431217,Pollich and Sons
+184,0999886533,Konopelski-Fisher
+187,2771763141,Fritsch Group
+190,2440654434,Frami-Trantow
+193,3701516421,Lubowitz-Torp
+196,9757145254,Schultz LLC
+199,6754204222,Price and Sons
+202,5317964865,Baumbach LLC
+205,1765356709,Koss-Tillman
+208,5463543224,Mosciski-Bruen
+211,3442731313,Schiller-Sanford
+214,4669927205,"Stamm, Brakus and Gutmann"
+217,4089147980,Paucek-Bergstrom
+220,9913574471,"McKenzie, Baumbach and D'Amore"
+223,4867628972,Hettinger and Sons
