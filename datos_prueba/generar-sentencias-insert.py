@@ -11,7 +11,7 @@ def csv_data(filename):
 
         header = next(reader)
 
-        data = [row for row in reader]
+        data = [row if len(row) else 'null' for row in reader]
 
         return header, data
 
