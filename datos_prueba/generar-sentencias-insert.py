@@ -27,15 +27,23 @@ def csv_to_sql(table_name, filename):
     # Fill the table_name and column into every sentence right away, but
     # values will be different for each sentence
 
-    dml_format = ('insert into {table_name}({table_name}_id, {columns})\n'
-                    'values ({table_name}_seq.nextval, ')
+    if table_name in ('servicio_viaje', 'servicio_renta', 'servicio_recarga'):
+        dml_format = ('insert into {table_name}({columns})\n'
+                        'values (')
 
-    dml_format = dml_format.format(table_name=table_name, columns=columns)
-    dml_format += '{other_values});\n'
+        dml_format = dml_format.format(table_name=table_name, columns=columns)
+        dml_format += '{other_values});\n'
+    else:
+        dml_format = ('insert into {table_name}({table_name}_id, {columns})\n'
+                        'values ({table_name}_seq.nextval, ')
+
+        dml_format = dml_format.format(table_name=table_name, columns=columns)
+        dml_format += '{other_values});\n'
 
     for row in rows:
-        escaped_row = [col.replace("'", "''") for col in row]
-        values = "'" + "', '".join(escaped_row) + "'"
+        #escaped_row = [col.replace("'", "''") for col in row]
+        #values = "'" + "', '".join(escaped_row) + "'"
+        values = ", ".join(row)
         sentences.append(dml_format.format(other_values=values))
 
     return ''.join(sentences)

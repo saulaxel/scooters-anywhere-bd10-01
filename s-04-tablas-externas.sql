@@ -15,7 +15,6 @@ grant read, write on directory dias_fest_dir to mp_proy_admin;
 prompt Creando la tabla externa dias_fest
 connect mp_proy_admin
 
-
 create table dias_fest_ext(
   dia_fest_id  number(10, 0),
   fecha_inicio date,
@@ -37,10 +36,14 @@ organization external (
       fecha_inicio date mask 'dd/mm/yyyy',
       fecha_fin date mask 'dd/mm/yyyy',
       razon
-    )    
+    )
   )
   location('dias_fest_ext.csv')
 )
 reject limit unlimited;
 
-!mkdir -p /tmp/
+col dia_fest_id format a10
+col fecha_inicio format a10
+col fecha_fin format a10
+col razon format a40
+

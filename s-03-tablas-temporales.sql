@@ -5,7 +5,7 @@
 prompt Crear tabla temporal
 --connect mp_proy_admin / mp
 
-drop table servicios;
+truncate table servicios;
 
 create global temporary table servicios (
   servicio_id                   number(10, 0),
