@@ -11,7 +11,7 @@ def csv_data(filename):
 
         header = next(reader)
 
-        data = [row if len(row) else 'null' for row in reader]
+        data = [row for row in reader]
 
         return header, data
 
@@ -43,6 +43,7 @@ def csv_to_sql(table_name, filename):
     for row in rows:
         #escaped_row = [col.replace("'", "''") for col in row]
         #values = "'" + "', '".join(escaped_row) + "'"
+        cols = [col if len(col) else 'null' for col in row]
         values = ", ".join(row)
         sentences.append(dml_format.format(other_values=values))
 
