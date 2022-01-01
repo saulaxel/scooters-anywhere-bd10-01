@@ -43,7 +43,7 @@ def csv_to_sql(table_name, filename):
     for row in rows:
         #escaped_row = [col.replace("'", "''") for col in row]
         #values = "'" + "', '".join(escaped_row) + "'"
-        cols = ['#' + col + '#' if len(col) else 'null' for col in row]
+        cols = [ col if len(col) else 'null' for col in row]
         values = ", ".join(cols)
         sentences.append(dml_format.format(other_values=values))
 
