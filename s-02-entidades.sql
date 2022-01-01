@@ -62,13 +62,13 @@ create table historial_status(
     references scooter(scooter_id)
 );
 
-create table posicion_gps(
-  posicion_gps_id number(10, 0) not null,
+create table historial_posicion_gps(
+  historial_posicion_gps_id number(10, 0) not null,
   scooter_id number(10, 0) not null,
   latitud number(10, 6) not null,
   longitud number(10, 6) not null,
-  hora date not null,
-  constraint posicion_gps_posicion_gps_id_pk primary key(posicion_gps_id),
+  fecha date not null,
+  constraint posicion_gps_posicion_gps_id_pk primary key(historial_posicion_gps_id),
   constraint posicion_gps_scooter_id_fk foreign key(scooter_id)
     references scooter(scooter_id)
 );
@@ -92,6 +92,7 @@ create table tarjeta_credito(
   constraint tarjeta_credito_tarjeta_credito_id_pk primary key(tarjeta_credito_id),
   constraint tarjeta_credito_usuario_id_fk foreign key(usuario_id)
     references usuario(usuario_id),
+  constraint tarjeta_credito_num_tarjeta_uk unique(num_tarjeta),
   constraint tarjeta_credito_mm_chk check(MM >= 1 and MM <= 12)
 );
 
@@ -160,6 +161,8 @@ create table scooter_servicio_recarga(
   constraint scooter_servicio_recarga_scooter_id_fk foreign key(scooter_id)
     references scooter(scooter_id),
   constraint scooter_servicio_recarga_porcentaje_carga_chk check(porcentaje_carga between 0.0 and 100.0)
+  -- unique de servicio_recarga_id y scooter_id
+  -- NOTA: Revisar si se cambia la llave artificial
 );
 
 create table reporte_falla(
@@ -175,6 +178,7 @@ create table reporte_falla(
     references usuario(usuario_id),
   constraint reporte_falla_scooter_id_fk foreign key(scooter_id)
     references scooter(scooter_id)
+  -- NOTA: unique usuario_id, scooter_id
 );
 
 create table imagen_falla(
@@ -215,4 +219,5 @@ create table scooter_zona(
     references zona(zona_id),
   constraint scooter_zona_scooter_id foreign key(scooter_id)
     references scooter(scooter_id)
+  -- Un unique zona_id, scooter_id
 );
