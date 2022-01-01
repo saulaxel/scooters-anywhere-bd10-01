@@ -1,0 +1,62 @@
+
+## Índices implícitos
+
+    servicio_viaje.servicio_id
+    servicio_renta.servicio_id
+    servicio_recarga.servicio_id
+
+
+    El folio de servicio_viaje
+
+    El nombre de marca
+    La clave de status
+
+
+## Índices
+
+    El status_id de scooter
+
+    Indexar fecha_expiracion para consultas de tipo:
+    Quiero todas las tarjeta_prepago expiradas
+    Quiero todas las tarjeta_prepago vigentes
+
+    El nombre de zona
+
+## Posibles
+
+    latitud y longitud
+    index(latitud, longitud)
+    Problemas: Mantener el índice es ineficiente
+    select * from scooters where latitud between x and y and longitud between x and y;
+
+    Problemas: Mantener el índice es ineficiente
+    Se tiene que conocer la coordenada del lugar que nos interesa
+    select * from scooters where (latitux - centrox)^2 + (longitud - centroy)^2 < distancia^2
+
+    capacidad_maxima_kg del scooter
+    Podría servir si se hicieran muchas consultas de "quiero scooters que puedan
+    cargar X"
+
+    marca_id del scooters
+    Serviría si hubiera variedad de marcas y cosa "dame todos los scooters de esta marca"
+
+    Dame el historial del scooter X
+    SELECT status_id, scooter_id from historial_status
+    where scooter_id = X and status_id = Y;
+    index(scooter_id, status_id)
+    Problemas: Los historiales son tablas grandes. El índice también va a ser
+    grande y costoso en espacio.
+
+    Dame dónde ha estado el scooter X
+    select * from historial_posicion_gps
+    where scooter_id = X;
+    Ejemplo: Un cliente perdió un objeto mientras usaba el scooter y queremos
+    saber el recorrido para volver sobre nuestros pasos.
+    Problemas: No parece una consulta frecuente. Solo para casos anormales.
+    Los historiales son tablas grandes. El índice también va a ser
+    grande y costoso en espacio.
+
+    Nombre completo
+    Problemas: No parece una consulta frecuente
+
+    Dame todos los servicios de renta que se hayan hecho con el scooter_id = X
