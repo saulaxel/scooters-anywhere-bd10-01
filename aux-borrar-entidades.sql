@@ -14,7 +14,7 @@ drop table servicio_viaje;
 drop table servicio;
 drop table tarjeta_credito;
 drop table usuario;
-drop table posicion_gps;
+drop table historial_posicion_gps;
 drop table historial_status;
 drop table scooter;
 drop table status;
