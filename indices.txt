@@ -6,7 +6,7 @@
     servicio_recarga.servicio_id
 
 
-    El folio de servicio_viaje
+   -- El folio de servicio_viaje 
 
     El nombre de marca
     La clave de status
@@ -14,13 +14,13 @@
 
 ## Índices
 
-    El status_id de scooter
+    -- El status_id de scooter
 
-    Indexar fecha_expiracion para consultas de tipo:
+    -- Indexar fecha_expiracion para consultas de tipo:
     Quiero todas las tarjeta_prepago expiradas
     Quiero todas las tarjeta_prepago vigentes
 
-    El nombre de zona
+    -- El nombre de zona
 
 ## Posibles
 
@@ -60,3 +60,5 @@
     Problemas: No parece una consulta frecuente
 
     Dame todos los servicios de renta que se hayan hecho con el scooter_id = X
+
+(claves, números de cuenta, rfc, curp, email, etc).
