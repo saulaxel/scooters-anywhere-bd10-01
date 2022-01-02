@@ -1803,181 +1803,181 @@ values (zona_seq.nextval, 'Ridgeway', '(96.291568,96.291568),(96.291568,106.2915
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 75);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 76);
+values (scooter_zona_seq.nextval, 76, 75);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 75);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 76);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 76);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 76);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 77);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 77);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 78);
+values (scooter_zona_seq.nextval, 78, 77);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 78);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 78);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 78);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 79);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 79);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 79);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 80);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 81);
+values (scooter_zona_seq.nextval, 76, 80);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 80);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 81);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 81);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 81);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 82);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 82);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 83);
+values (scooter_zona_seq.nextval, 78, 82);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 83);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 83);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 83);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 84);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 84);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 84);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 85);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 86);
+values (scooter_zona_seq.nextval, 76, 85);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 85);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 86);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 86);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 86);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 87);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 87);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 88);
+values (scooter_zona_seq.nextval, 78, 87);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 88);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 88);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 88);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 89);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 89);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 89);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 90);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 91);
+values (scooter_zona_seq.nextval, 76, 90);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 90);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 91);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 91);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 91);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 92);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 92);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 93);
+values (scooter_zona_seq.nextval, 78, 92);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 93);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 93);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 93);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 94);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 94);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 94);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 95);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 96);
+values (scooter_zona_seq.nextval, 76, 95);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 95);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 96);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 96);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 96);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 97);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 97);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 98);
+values (scooter_zona_seq.nextval, 78, 97);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 98);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 98);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 98);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 99);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 99);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 99);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 75, 100);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 101);
+values (scooter_zona_seq.nextval, 76, 100);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 77, 100);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 78, 101);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 79, 101);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 75, 101);
+insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
+values (scooter_zona_seq.nextval, 76, 102);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 77, 102);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 103);
+values (scooter_zona_seq.nextval, 78, 102);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 104);
+values (scooter_zona_seq.nextval, 79, 103);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 75);
+values (scooter_zona_seq.nextval, 75, 103);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 76);
+values (scooter_zona_seq.nextval, 76, 103);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 77);
+values (scooter_zona_seq.nextval, 77, 104);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 78);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 79);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 80);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 81);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 82);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 83);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 84);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 85);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 86);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 87);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 88);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 89);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 90);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 91);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 92);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 93);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 94);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 95);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 96);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 97);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 98);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 99);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 100);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 101);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 102);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 103);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 104);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 75);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 76);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 77);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 78);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 79);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 80);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 81);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 82);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 83);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 84);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 85);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 86);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 87);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 88);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 89);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 90);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 91);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 92);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 93);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 94);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 95);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 96);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 97);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 98);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 79, 99);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 75, 100);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 76, 101);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 77, 102);
-insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
-values (scooter_zona_seq.nextval, 78, 103);
+values (scooter_zona_seq.nextval, 78, 104);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 104);
 

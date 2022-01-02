@@ -1,3 +1,4 @@
+connect mp_proy_admin/mp;
 drop index scooter_status_id_ix;
 drop index scooter_capacidad_maxima_kg_ix;
 drop index tarjeta_prepago_fecha_expiracion_ix;
@@ -12,4 +13,4 @@ drop index tarjeta_prepago_fecha_expiracion_anio_ix;
 drop index usuario_email_iuk;
 drop index scooter_zona_zona_id_iuk;
 drop index reporte_falla_scooter_id_usuario_id_iuk;
-drop index scooter_servicio_recarga_servicio_recarga_id_scooter_id;
+

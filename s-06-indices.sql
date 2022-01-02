@@ -83,3 +83,5 @@ create unique index scooter_zona_zona_id_iuk on scooter_zona(zona_id,scooter_id)
       usuario_id
     );
     
+create index scooter_servicio_recarga_servicio_recarga_id_scooter_id_ix 
+on scooter_servicio_recarga(servicio_recarga_id,scooter_id);
