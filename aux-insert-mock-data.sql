@@ -30,55 +30,55 @@ values (marca_seq.nextval, 'Topex');
 
 -- Insertions to table telefono_marca
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 1, 9756551410);
+values (telefono_marca_seq.nextval, 75, 6907856554);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 2, 3166556666);
+values (telefono_marca_seq.nextval, 76, 4343143453);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 3, 5319053989);
+values (telefono_marca_seq.nextval, 77, 6992620395);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 4, 3539316503);
+values (telefono_marca_seq.nextval, 78, 3904231847);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 5, 1487148261);
+values (telefono_marca_seq.nextval, 79, 7579948936);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 6, 1841718778);
+values (telefono_marca_seq.nextval, 80, 9399066414);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 7, 6735290915);
+values (telefono_marca_seq.nextval, 81, 8265211481);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 8, 8252593506);
+values (telefono_marca_seq.nextval, 82, 6215279356);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 9, 3927351438);
+values (telefono_marca_seq.nextval, 83, 1007503544);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 10, 2889157018);
+values (telefono_marca_seq.nextval, 84, 9015868074);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 1, 6745460928);
+values (telefono_marca_seq.nextval, 75, 1322908414);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 2, 5253945579);
+values (telefono_marca_seq.nextval, 76, 7006692743);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 3, 3225158629);
+values (telefono_marca_seq.nextval, 77, 1773320456);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 4, 6708456249);
+values (telefono_marca_seq.nextval, 78, 2031531422);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 5, 2747117958);
+values (telefono_marca_seq.nextval, 79, 6119545090);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 6, 8622028604);
+values (telefono_marca_seq.nextval, 80, 2993904106);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 7, 4222903453);
+values (telefono_marca_seq.nextval, 81, 8273460381);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 8, 7254086757);
+values (telefono_marca_seq.nextval, 82, 9145219787);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 9, 9631934248);
+values (telefono_marca_seq.nextval, 83, 3633967981);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 10, 2771214210);
+values (telefono_marca_seq.nextval, 84, 3725065286);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 1, 5944280695);
+values (telefono_marca_seq.nextval, 75, 8915080957);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 2, 6041825461);
+values (telefono_marca_seq.nextval, 76, 9011103272);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 3, 7504417111);
+values (telefono_marca_seq.nextval, 77, 1169124916);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 4, 7202804861);
+values (telefono_marca_seq.nextval, 78, 6984352413);
 insert into telefono_marca(telefono_marca_id, marca_id, telefono)
-values (telefono_marca_seq.nextval, 5, 3563241475);
+values (telefono_marca_seq.nextval, 79, 2292135808);
 
 
 -- Insertions to table status
@@ -1980,5 +1980,58 @@ insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 78, 104);
 insert into scooter_zona(scooter_zona_id, zona_id, scooter_id)
 values (scooter_zona_seq.nextval, 79, 104);
+
+
+-- Insertions to table efono_marca
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 75, 9238876668);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 76, 5229188806);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 77, 9479193219);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 78, 7509552062);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 79, 5634295823);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 80, 3944649170);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 81, 5157605753);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 82, 1006987175);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 83, 1495860509);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 84, 4078744669);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 75, 8562745509);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 76, 3261087165);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 77, 8898852563);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 78, 2477336542);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 79, 4729806280);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 80, 5751677647);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 81, 1035033912);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 82, 4153755948);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 83, 3847465047);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 84, 6242692478);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 75, 3836412521);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 76, 5651279087);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 77, 9914396505);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 78, 3769553751);
+insert into efono_marca(efono_marca_id, marca_id, telefono)
+values (efono_marca_seq.nextval, 79, 5602455971);
 
 
