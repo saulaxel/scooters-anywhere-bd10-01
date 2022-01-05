@@ -106,6 +106,3 @@ from reporte_falla rf inner join usuario u
  
 
 select * from v_historial_status;
-
-
-select * from v_scooter_zona;
