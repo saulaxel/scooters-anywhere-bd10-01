@@ -15,7 +15,9 @@ create table telefono_marca(
   telefono_marca_id number(10, 0) not null,
   marca_id number(10, 0) not null,
   telefono number(15, 0) not null,
-  constraint telefono_marca_pk primary key(marca_id, telefono)
+  constraint telefono_marca_id_pk primary key(telefono_marca_id),
+  constraint marca_id_fk foreign key (marca_id) 
+  references marca(marca_id) 
 );
 
 create table status(
