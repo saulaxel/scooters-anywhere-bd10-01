@@ -100,7 +100,7 @@ nomaxvalue
 nocycle
 cache 5;
 
-create sequence posicion_gps_seq
+create sequence historial_posicion_gps_seq
 start with 75
 increment by 1
 minvalue 75
