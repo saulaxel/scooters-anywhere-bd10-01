@@ -115,8 +115,8 @@ create table servicio_viaje (
   scooter_id   number(10, 0) not null, -- TODO Cambiar el nombre en diagramas
   folio        varchar2(13) not null,
   fecha_inicio date default sysdate not null,
-    fecha_fin generated always as ( fecha_inicio + 8 / 24 ) virtual,
-    hora_inicio generated always as ( to_char(fecha_inicio, 'hh24/mi/ss') ) virtual,
+  fecha_fin generated always as ( fecha_inicio + 8 / 24 ) virtual,
+  hora_inicio generated always as ( to_char(fecha_inicio, 'hh24/mi/ss') ) virtual,
   -- con dos atributos de tipo date
   -- un atributo fecha inicio, y no poner hora de inicio porque llega hasta segundos
   -- se puede representar todo esto con un atributo
@@ -133,7 +133,7 @@ create table servicio_renta (
   scooter_id   number(10, 0) not null,
   fecha_inicio date not null,
   numero_dias  number(2, 0) not null,
-    fecha_fin generated always as ( fecha_inicio + numero_dias ) virtual,
+  fecha_fin generated always as ( fecha_inicio + numero_dias ) virtual,
   constraint servicio_renta_servicio_id_pk primary key ( servicio_id ),
   constraint servicio_renta_servicio_id_fk foreign key ( servicio_id )
     references servicio ( servicio_id ),
