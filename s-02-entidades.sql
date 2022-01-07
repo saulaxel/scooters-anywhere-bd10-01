@@ -112,7 +112,7 @@ create table servicio (
 
 create table servicio_viaje (
   servicio_id  number(10, 0) not null,
-  scooter_id   number(10, 0) not null, -- TODO Cambiar el nombre en diagramas
+  scooter_id   number(10, 0) not null,
   folio        varchar2(13) not null,
   fecha_inicio date default sysdate not null,
   fecha_fin generated always as ( fecha_inicio + 8 / 24 ) virtual,
