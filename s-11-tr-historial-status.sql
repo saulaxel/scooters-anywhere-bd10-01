@@ -27,9 +27,7 @@ begin
       -- Es un scooter preexistente. Revisamos si realmente
       -- cambió el valor de su status. En caso de no haber cambiado
       -- se lanza un error
-      if :new.status_id != :old.status_id then
-        dbms_output.put_line('hola');
-      else
+      if :new.status_id = :old.status_id then
         raise_application_error(-20001, 'El scooter ya tiene el estado indicado');
       end if;
   end case;

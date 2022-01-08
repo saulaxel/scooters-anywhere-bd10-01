@@ -2,6 +2,31 @@
 --@Fecha creación:  2021-12-08
 --@Descripción:     Creación de entidades
 
+create or replace function generar_folio_aleatorio
+  return servicio_viaje.folio%type is
+  v_folio_aleatorio       servicio_viaje.folio%type;
+  v_folio_already_exists  number;
+  v_longitud_folio        number;
+begin
+  select data_length into v_longitud_folio
+  from user_tab_columns 
+  where table_name in ('SERVICIO_VIAJE') and column_name = 'FOLIO';
+
+  loop
+    select dbms_random.string('U', v_longitud_folio) into v_folio_aleatorio from dual;
+  
+    select count(*) into v_folio_already_exists
+    from servicio_viaje
+    where folio = v_folio_aleatorio;
+    
+    exit when v_folio_already_exists = 0;
+  end loop;
+
+  return v_folio_aleatorio;
+end;
+/
+ 
+
 -- Probar inserciones válidas e inválidas en servicio_viaje
 create or replace procedure prueba_integridad_servicio_viaje is
   v_primera_prueba_completada number(1);
@@ -25,15 +50,7 @@ begin
   -- mientras que una inserción en cualquier otro servicio no debe ser válida
   dbms_output.put_line('Haciendo una insersión válida en servicio_viaje');
   
-  loop
-    select dbms_random.string('U', 13) into v_folio_aleatorio from dual;
-  
-    select count(*) into v_folio_already_exists
-    from servicio_viaje
-    where folio = v_folio_aleatorio;
-    
-    exit when v_folio_already_exists = 0;
-  end loop;
+  v_folio_aleatorio := generar_folio_aleatorio();
   
   insert into servicio_viaje(
     servicio_id,
@@ -216,15 +233,7 @@ begin
   dbms_output.put_line('Probando insertar un servicio_renta asociado a un '
                     || 'padre de tipo viaje');
 
-  loop
-    select dbms_random.string('U', 13) into v_folio_aleatorio from dual;
-  
-    select count(*) into v_folio_already_exists
-    from servicio_viaje
-    where folio = v_folio_aleatorio;
-    
-    exit when v_folio_already_exists = 0;
-  end loop;
+  v_folio_aleatorio := generar_folio_aleatorio();
 
   insert into servicio_viaje (
     servicio_id,
@@ -234,7 +243,7 @@ begin
   ) values (
     servicio_seq.currval,
     75,
-    12345,
+    v_folio_aleatorio,
     sysdate
   );
   
@@ -255,13 +264,17 @@ end;
 
 set serveroutput on;
 begin
+  dbms_output.put_line('=====================================================');
   dbms_output.put_line('Probando trigger para servicio viaje');
   prueba_integridad_servicio_viaje();
+  dbms_output.put_line('=====================================================');
   dbms_output.put_line('Probando trigger para servicio renta');
   prueba_integridad_servicio_renta();
+  dbms_output.put_line('=====================================================');
   dbms_output.put_line('Probando trigger para servicio recarga');
   prueba_integridad_servicio_recarga();
   
+  dbms_output.put_line('');
   dbms_output.put_line('Las pruebas se han completado de forma exitosa');
   
 exception

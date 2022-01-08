@@ -13,6 +13,13 @@ begin
     and :new.ultima_longitud_gps is not null
   then
     :new.ultima_fecha_gps := sysdate;
+  else
+    case 
+      when updating then
+        raise_application_error(-20002, 'Posición GPS incorrecta');
+      when inserting then
+        null;
+    end case;
   end if;
 end;
 /

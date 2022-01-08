@@ -1,3 +1,5 @@
 -20001 -> Actualización de estado redundante
--20002 -> Posición gps incorrecta
+-20002 -> Posición GPS incorrecta
 -20003 -> Error al cargar jerarquía de tipos
+
+-20999 -> Errores durante pruebas
