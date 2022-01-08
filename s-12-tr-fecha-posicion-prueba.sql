@@ -1,6 +1,6 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
 --@Fecha creación:  2022-01-05
---@Descripción:     Probando s-11-rt-fecha-posicion.sq
+--@Descripción:     Prueba de s-11-tr-fecha-status.sql
 
 set serveroutput on
 
@@ -12,11 +12,11 @@ create or replace function generar_num_serie_aleatorio
 begin
   loop
     select dbms_random.value(1000000, 9999999) into v_num_serie from dual;
-  
+
     select count(*) into v_record_already_exists
     from scooter
     where num_serie = v_num_serie;
-    
+
     exit when v_record_already_exists = 0;
   end loop;
   return v_num_serie;
@@ -30,11 +30,11 @@ create or replace function generar_num_placa_aleatorio
 begin
   loop
     select dbms_random.value(1000000, 9999999) into v_num_placa from dual;
-  
+
     select count(*) into v_record_already_exists
     from scooter
     where num_placa = v_num_placa;
-    
+
     exit when v_record_already_exists = 0;
   end loop;
   return v_num_placa;
@@ -49,7 +49,7 @@ declare
   v_num_serie             scooter.num_serie%type;
   v_num_placa             scooter.num_placa%type;
   v_registro_scooter      scooter%rowtype;
-  
+
   v_probando_error        number;
 begin
   v_probando_error := 0;
@@ -77,7 +77,7 @@ begin
     75,
     75
   );
-  
+
   select * into v_registro_scooter
   from scooter
   where scooter_id = v_scooter_id;
@@ -86,12 +86,12 @@ begin
     raise_application_error(-20999, 'Fecha espuria');
   end if;
   dbms_output.put_line('Prueba exitosa');
-  
+
   dbms_output.put_line('Actualizando para dar posición gps al nuevo registro');
   update scooter
   set ultima_latitud_gps = 19.5, ultima_longitud_gps = -99.5
   where scooter_id = v_scooter_id;
-  
+
   select * into v_registro_scooter
   from scooter
   where scooter_id = v_scooter_id;
@@ -99,12 +99,12 @@ begin
   if v_registro_scooter.ultima_fecha_gps is null then
     raise_application_error(-20999, 'El trigger no actualizó la fecha de la posición');
   end if;
-  
+
   v_num_serie := generar_num_serie_aleatorio();
   v_num_placa := generar_num_placa_aleatorio();
 
   select scooter_seq.nextval into v_scooter_id from dual;
-  dbms_output.put_line('Insertando un scooter con posición GPS');  
+  dbms_output.put_line('Insertando un scooter con posición GPS');
   insert into scooter (
     scooter_id,
     num_serie,
@@ -134,13 +134,13 @@ begin
   if v_registro_scooter.ultima_fecha_gps is null then
     raise_application_error(-20999, 'El trigger no configuró la fecha');
   end if;
-  
+
   v_probando_error := 1;
   dbms_output.put_line('Tratando de poner null en la posición GPS');
   update scooter
   set ultima_latitud_gps = null, ultima_longitud_gps = null
   where scooter_id = v_scooter_id;
-  
+
   -- Esta parte del código no debería alcanzarse
   raise_application_error(-20999, 'No se obtuvo la excepción esperada');
 
