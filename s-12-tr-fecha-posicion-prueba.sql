@@ -4,44 +4,8 @@
 
 set serveroutput on
 
--- generar_num_serie_aleatorio
-create or replace function generar_num_serie_aleatorio
-  return scooter.num_serie%type is
-  v_num_serie             scooter.num_serie%type;
-  v_record_already_exists number;
-begin
-  loop
-    select dbms_random.value(1000000, 9999999) into v_num_serie from dual;
-
-    select count(*) into v_record_already_exists
-    from scooter
-    where num_serie = v_num_serie;
-
-    exit when v_record_already_exists = 0;
-  end loop;
-  return v_num_serie;
-end;
-/
-
-create or replace function generar_num_placa_aleatorio
-  return scooter.num_serie%type is
-  v_num_placa             scooter.num_placa%type;
-  v_record_already_exists number;
-begin
-  loop
-    select dbms_random.value(1000000, 9999999) into v_num_placa from dual;
-
-    select count(*) into v_record_already_exists
-    from scooter
-    where num_placa = v_num_placa;
-
-    exit when v_record_already_exists = 0;
-  end loop;
-  return v_num_placa;
-end;
-/
-
-
+@@s-15-fx-generar-num-serie-aleatorio.sql
+@@s-15-fx-generar-num-placa-aleatorio.sql
 
 declare
   v_record_already_exists number;

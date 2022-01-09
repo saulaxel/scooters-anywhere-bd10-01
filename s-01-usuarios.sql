@@ -27,4 +27,3 @@ grant rol_admin to mp_proy_admin;
 grant rol_invitado to mp_proy_invitado;
 
 prompt terminando script s-01-usuarios.sql
-disconnect
