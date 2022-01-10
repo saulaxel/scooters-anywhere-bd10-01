@@ -2,7 +2,6 @@
 --@Fecha creación:  2021-12-08
 --@Descripción:     Procedimiento almacenado que recibe un blob y genera una
 --                  imagen jpg en el directorio externo
--- Adaptación de https://orclqa.com/oracle-pl-sql-download-blob-file-to-disk/
 
 create or replace procedure blob_a_imagen (
   v_datos_imagen in blob
@@ -30,6 +29,7 @@ exception
     if utl_file.is_open(v_archivo) then
       utl_file.fclose(v_archivo);
     end if;
+    dbms_output.put_line(dbms_utility.format_error_backtrace);
     raise;
 end;
 /

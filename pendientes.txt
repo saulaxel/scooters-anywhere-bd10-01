@@ -1,0 +1,12 @@
+Cosas obligatorios
+- Script main que reinicie la base de datos
+- Trigger para limitar número de imagenes por reporte
+- Varias pruebas
+- Falta trigger que use delete
+
+Cosas no obligatorias
+- Crear funciones con un objetivo distinto
+- Crear un script para insertar datos en la base de datos
+- Pruebas unitarias: pruebas que solo afectan un archivo
+    Pruebas de unidad: leer y escribir archivo
+- Usar union, intersect
