@@ -1,6 +1,6 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
 --@Fecha creación:  2022-01-05
---@Descripción:     Prueba de s-11-tr-fecha-status.sql
+--@Descripción:     Prueba de s-11-tr-fecha-posicion.sql
 
 set serveroutput on
 

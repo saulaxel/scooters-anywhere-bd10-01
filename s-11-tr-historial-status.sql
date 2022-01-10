@@ -24,22 +24,28 @@ begin
       );
     
     when updating then
-      -- Es un scooter preexistente. Revisamos si realmente
+  -- Es un scooter preexistente. Revisamos si realmente
       -- cambió el valor de su status. En caso de no haber cambiado
       -- se lanza un error
       if :new.status_id = :old.status_id then
         raise_application_error(-20001, 'El scooter ya tiene el estado indicado');
       end if;
+      
+      insert into historial_status (
+        historial_status_id,
+        status_id,
+        scooter_id,
+        fecha_status
+      ) values (
+        historial_status_seq.nextval,
+        :new.status_id,
+        :new.scooter_id,
+        :new.fecha_status
+      );
   end case;
   
   exception
     when others then
-      dbms_output.put_line('Ocurrió un error: ' || sqlerrm);
       raise;
 end;
 /
-
-set serveroutput off;
-update scooter
-set status_id = 77
-where scooter_id = 110;
