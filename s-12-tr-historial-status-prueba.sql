@@ -5,11 +5,11 @@
 declare
   v_registros_historial_antes   number;
   v_registros_historial_despues number;
-  
+
   v_fila_historial              historial_status%rowtype;
-  v_status_id_anterior         scooter.scooter_id%type;
+  v_status_id_anterior          scooter.scooter_id%type;
   v_status_id_siguiente         scooter.scooter_id%type;
-  
+
   v_checando_error              number;
 begin
   v_checando_error := 0;

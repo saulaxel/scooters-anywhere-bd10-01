@@ -188,7 +188,10 @@ create table imagen_falla (
   imagen           blob not null,
   constraint imagen_falla_imagen_falla_id_pk primary key ( imagen_falla_id ),
   constraint imagen_falla_reporte_falla_id_fk foreign key ( reporte_falla_id )
-    references reporte_falla ( reporte_falla_id )
+    references reporte_falla ( reporte_falla_id ),
+  constraint imagen_falla_limite_chk check(
+    imagen_falla_id >= 75 and imagen_falla_id <= 80
+  )
 );
 
 create table tarjeta_prepago (

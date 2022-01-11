@@ -2,5 +2,6 @@
 -20002 -> Posición GPS incorrecta
 -20003 -> Error al cargar jerarquía de tipos
 -20004 -> Error de lectura de archivo
+-20005 -> Cardinalidad máxima alcanzada
 
 -20999 -> Errores durante pruebas
