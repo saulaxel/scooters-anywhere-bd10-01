@@ -1,16 +1,19 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
 --@Fecha creación:  2022-01-10
---@Descripción:     Prueba de cardinalidad de s-11-tr-limite-telefono.sql
+--@Descripción:     Prueba de s-11-tr-limite-telefono.sql
 set serveroutput on;
 
 declare
   v_marca_id          number;
   v_telefono_marca_id number;
   i                   number;
+  
   telefono            number;
   v_nombre            varchar2(40) := dbms_random.string('L', 6);
+  
   v_probando_error    number := 0;
 begin
+  dbms_output.put_line('=====================================================');
   select
     marca_seq.nextval
   into v_marca_id
@@ -66,6 +69,8 @@ begin
     v_marca_id,
     telefono
   );
+  
+  raise_application_error(-20999, "No debe llegar a este punto);
 
 exception
   when others then

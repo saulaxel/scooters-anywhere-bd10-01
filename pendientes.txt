@@ -14,3 +14,10 @@ Cosas no obligatorias
 - Pruebas unitarias: pruebas que solo afectan un archivo
     Pruebas de unidad: leer y escribir archivo
 - Usar union, intersect
+
+pasar de Servicio_recarga.servicio_banco a nombre_banco en diagrama relacional
+pasar de servicio_id a servicio_recarga_id  en diagrama relacional
+servicio tiene un texto encima
+La fecha_status se volvió opcional
+
+scooter_zona tiene not null que no deben de ir
