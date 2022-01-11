@@ -2,9 +2,6 @@
 --@Fecha creación:  2022-01-01
 --@Descripción:     Creación de índices
 
-prompt Conectando como usuario administrador para crear los índices
-connect mp_proy_admin
-
 --
 -- indices normales
 --

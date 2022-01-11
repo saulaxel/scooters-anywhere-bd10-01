@@ -1,12 +1,12 @@
 Cosas obligatorios
 - Script main que reinicie la base de datos
-- Trigger para limitar número de imagenes por reporte
-- Varias pruebas
++ Trigger para limitar número de imagenes por reporte
++ Varias pruebas
     + De los triggers
     + De los procedimientos
     - De las funciones
 - Falta trigger que use delete
-- Falta uso de cursores
++ Falta uso de cursores
 
 Cosas no obligatorias
 - Crear funciones con un objetivo distinto

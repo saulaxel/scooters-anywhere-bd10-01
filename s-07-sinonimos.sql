@@ -2,10 +2,7 @@
 --@Fecha creación:  2022/01/03
 --@Descripción:     Creación de sinónimos
 
-prompt Connect as admin to create public synonyms
-connect mp_proy_admin/mp
-
-prompt creando o reemplazando sinónimos públicos con PL/SQL
+prompt Creando o reemplazando sinónimos públicos con PL/SQL
 
 set serveroutput on
 declare
@@ -37,8 +34,3 @@ begin
  end;
  
  /
- 
--- execute immediate 
---select * from mp_servicio;
--- grant select on mp_proy_admin.SERVICIOS to mp_proy_invitado
---create or replace public synonym MP_SCOOTER for mp_proy_admin.SCOOTER;

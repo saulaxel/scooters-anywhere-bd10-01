@@ -182,16 +182,23 @@ create table reporte_falla (
   -- NOTA: unique usuario_id, scooter_id
 );
 
+create table backup_reporte_falla (
+  reporte_falla_id  number(10, 0) not null,
+  usuario_id        number(10, 0) not null,
+  scooter_id        number(10, 0) not null,
+  fecha_reporte     date          not null,
+  latitud           number(10, 6) null,
+  longitud          number(10, 6) null,
+  descripcion_falla varchar2(2000 char) null
+);
+
 create table imagen_falla (
   imagen_falla_id  number(10, 0) not null,
   reporte_falla_id number(10, 0) not null,
   imagen           blob not null,
   constraint imagen_falla_imagen_falla_id_pk primary key ( imagen_falla_id ),
   constraint imagen_falla_reporte_falla_id_fk foreign key ( reporte_falla_id )
-    references reporte_falla ( reporte_falla_id ),
-  constraint imagen_falla_limite_chk check(
-    imagen_falla_id >= 75 and imagen_falla_id <= 80
-  )
+    references reporte_falla ( reporte_falla_id ) on delete cascade
 );
 
 create table tarjeta_prepago (

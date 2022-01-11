@@ -15,7 +15,7 @@ begin
   on s.scooter_id = sz.scooter_id
   where :new.scooter_id = sz.scooter_id;
   
-  if v_num_imagenes >= 3 then
+  if v_num_scooters >= 3 then
     raise_application_error(-20005, 'Un scooter solo puede tener 3 zonas');
   end if;
 end;

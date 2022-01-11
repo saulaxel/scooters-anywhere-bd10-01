@@ -71,7 +71,7 @@ def main():
         )
 
 
-        for filename in sorted(glob('*.???')):
+        for filename in sorted(glob('??-*.???')):
 
             # Filename = NN-table_name.{csv,sql}
             table_name = filename[3:-4]

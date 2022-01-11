@@ -1,4 +1,8 @@
-connect mp_proy_admin/mp;
+--@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
+--@Fecha creación:  2021-12-23
+--@Descripción:     Eliminación explícita de índices
+-- mp
+
 drop index scooter_status_id_ix;
 drop index scooter_capacidad_maxima_kg_ix;
 drop index tarjeta_prepago_fecha_expiracion_ix;
