@@ -1,0 +1,2 @@
++Comprobar que servicio y sus derivados coincidan en tipo
++Limitar la cardinalidad en relaciones uno a muchos o muchos a muchos

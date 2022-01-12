@@ -14,6 +14,8 @@ declare
   v_num_placa             scooter.num_placa%type;
   v_registro_scooter      scooter%rowtype;
   
+  v_status_id             number := 75;
+  v_marca_id              number := 75;
 begin
   dbms_output.put_line('=====================================================');
 
@@ -36,8 +38,8 @@ begin
     v_num_placa,
     'contrasenia123',
     50,
-    75,
-    75
+    v_marca_id,
+    v_status_id
   );
 
   select * into v_registro_scooter

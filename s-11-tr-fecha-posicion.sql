@@ -14,7 +14,7 @@ begin
   then
     :new.ultima_fecha_gps := sysdate;
   else
-    case 
+    case
       when updating then
         raise_application_error(-20002, 'Posición GPS incorrecta');
       when inserting then

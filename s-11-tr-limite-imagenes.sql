@@ -14,7 +14,7 @@ begin
   inner join reporte_falla rf
   on imaf.reporte_falla_id = rf.reporte_falla_id
   where :new.reporte_falla_id = rf.reporte_falla_id;
-  
+
   if v_num_imagenes >= 5 then
     raise_application_error(-20005, 'Un reporte_falla puede tener máximo 5 imágenes asociadas');
   end if;

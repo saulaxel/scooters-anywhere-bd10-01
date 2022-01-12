@@ -7,6 +7,9 @@ declare
   v_servicio_recarga_id         number;
   v_scooter_servicio_recarga_id number;
 
+  v_usuario_id                  number := 75;
+  v_scooter_id                  number := 75;
+
   i                             number;
   v_probando_error              number := 0;
 begin
@@ -16,14 +19,14 @@ begin
   into v_servicio_recarga_id
   from
     dual;
-    
+
   insert into servicio (
     servicio_id,
     usuario_id,
     tipo
   ) values (
     v_servicio_recarga_id,
-    75,
+    v_usuario_id,
     'C'
   );
 
@@ -52,7 +55,7 @@ begin
       servicio_recarga_id
     ) values (
       v_scooter_servicio_recarga_id,
-      75,
+      v_scooter_id,
       50,
       v_servicio_recarga_id
     );
@@ -74,12 +77,12 @@ begin
     servicio_recarga_id
   ) values (
     v_scooter_servicio_recarga_id,
-    75,
+    v_scooter_id,
     50,
     v_servicio_recarga_id
   );
-  
-  raise_application_error(-20999, "No debe llegar a este punto);
+
+  raise_application_error(-20999, 'No debe llegar a este punto');
 
 exception
   when others then

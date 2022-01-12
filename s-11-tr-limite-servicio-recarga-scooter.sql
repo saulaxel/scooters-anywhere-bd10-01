@@ -14,7 +14,7 @@ begin
   inner join scooter_servicio_recarga ssr
   on sr.servicio_id = ssr.servicio_recarga_id
   where :new.servicio_recarga_id = ssr.servicio_recarga_id;
-  
+
   if v_num_scooters >= 20 then
     raise_application_error(-20005, 'Un servicio_recarga puede aplicarse hasta a 20 scooters');
   end if;

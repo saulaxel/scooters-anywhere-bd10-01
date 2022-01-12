@@ -1,6 +1,6 @@
 --@Autor:           Martínez Ortiz Saúl Axel, Padilla Herrera Carlos Ignacio
 --@Fecha creación:  2021-12-08
---@Descripción:     Creación de entidades
+--@Descripción:     Borrado de secuencias
 
 prompt Borrando secuencias
 drop sequence marca_seq;

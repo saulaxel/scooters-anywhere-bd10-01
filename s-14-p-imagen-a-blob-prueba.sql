@@ -16,16 +16,16 @@ begin
 
   select count(*) into v_imagenes_antes
   from imagen_falla;
-  
+
   cargar_imagen_falla('scooter-in-flames.jpeg', 75);
-  
+
   select count(*) into v_imagenes_despues
   from imagen_falla;
-  
+
   if v_imagenes_despues != v_imagenes_antes + 1 then
     raise_application_error(-20999, 'No se insertó correctamente una imagen en imagen_falla');
   end if;
-  
+
   dbms_output.put_line('Prueba concluida correctamente');
 end;
 /

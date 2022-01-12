@@ -6,9 +6,12 @@ Prompt Borrando los datos de la base
 
 connect mp_proy_admin
 
-@@aux-borrar-entidades.sql
-@@aux-borrar-secuencias.sql
+--@@aux-borrar-entidades.sql
+--@@aux-borrar-secuencias.sql
+--@@aux-borrar-indices.sql
+--@@aux-borrar-triggers.sql
 @@aux-borrar-usuarios.sql
+
 
 Prompt Recreando la base de datos
 @@s-01-usuarios.sql
@@ -21,6 +24,7 @@ Prompt Recreando la base de datos
 @@s-08-vistas.sql
 @@s-09-carga-inicial.sql
 
+prompt Creación de triggers
 @@s-11-tr-fecha-posicion.sql
 @@s-11-tr-fecha-status.sql
 @@s-11-tr-historial-posicion.sql
@@ -31,10 +35,12 @@ Prompt Recreando la base de datos
 @@s-11-tr-limite-servicio-recarga-scooter.sql
 @@s-11-tr-limite-telefono.sql
 
+prompt Creación de procedimientos almacenados
 @@s-13-p-blob-a-imagen.sql
 @@s-13-p-imagen-a-blob.sql
 @@s-13-p-descargar-imagenes-reporte.sql
 
+prompt Creación de funciones
 @@s-15-fx-generar-folio-aleatorio.sql
 @@s-15-fx-generar-num-placa-aleatorio.sql
 @@s-15-fx-generar-num-serie-aleatorio.sql

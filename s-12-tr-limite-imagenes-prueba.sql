@@ -6,10 +6,13 @@ set serveroutput on;
 declare
   v_reporte_falla_id  number;
   v_imagen_falla_id   number;
-  
+
   i                   number;
-  
+
   v_probando_error    number := 0;
+
+  v_usuario_id        number := 75;
+  v_scooter_id        number := 75;
 begin
   dbms_output.put_line('=====================================================');
 
@@ -33,11 +36,11 @@ begin
     19.5,
     -99.5,
     'Descripción',
-    75,
-    75
+    v_scooter_id,
+    v_usuario_id
   );
 
-  dbms_output.put_line('Insertando la cantidad'  
+  dbms_output.put_line('Insertando la cantidad'
   || ' permitida de valores en la entidad imagen_falla');
   for i in 1..5 loop
     select
@@ -58,7 +61,7 @@ begin
 
   end loop;
 
-  dbms_output.put_line('Insertando un valor más de la cantidad permitida' 
+  dbms_output.put_line('Insertando un valor más de la cantidad permitida'
   || ' de valores en la entidad imagen_falla');
 
   v_probando_error := 1;
@@ -78,8 +81,8 @@ begin
     empty_blob(),
     v_reporte_falla_id
   );
-  
-  raise_application_error(-20999, "No debe llegar a este punto);
+
+  raise_application_error(-20999, 'No debe llegar a este punto');
 
 exception
   when others then
