@@ -20,9 +20,3 @@ begin
   end loop;
 end;
 /
-
-cliente (
-  id,
-  nombre,
-  ...
-)
