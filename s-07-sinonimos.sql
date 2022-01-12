@@ -23,10 +23,10 @@ declare
 
 begin
   for p in cur_vistas loop
-    v_synonym := 'MP_' || p.table_name;
+    v_synonym := 'MP_' || p.view_name;
     v_grant := 'grant select on '
                || 'mp_proy_admin.'
-               || p.table_name
+               || p.view_name
                || ' to '
                || 'mp_proy_invitado';
 
@@ -34,7 +34,7 @@ begin
                 || v_synonym
                 || ' for '
                 || 'mp_proy_admin.'
-                || p.table_name;
+                || p.view_name;
 
     execute immediate v_grant;
     execute immediate v_create;
