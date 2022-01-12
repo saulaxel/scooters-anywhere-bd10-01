@@ -3,6 +3,9 @@
 --@Descripción:     Creación de entidades
 -- mp
 
+connect sys as sysdba
+create or replace directory img_dir as '/tmp/img';
+
 prompt creando usuario admin
 create user mp_proy_admin identified by mp
 quota unlimited on users;
@@ -17,6 +20,7 @@ grant create session to rol_admin;
 
 grant create table, create view, create public synonym, create synonym, create trigger,
 create sequence, create procedure to rol_admin;
+grant read, write on directory img_dir to mp_proy_admin;
 
 prompt crear rol invitado
 create role rol_invitado;
