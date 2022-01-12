@@ -30,3 +30,7 @@ Prompt Recreando la base de datos
 @@s-11-tr-limite-scooter-zona.sql
 @@s-11-tr-limite-servicio-recarga-scooter.sql
 @@s-11-tr-limite-telefono.sql
+
+@@s-15-fx-generar-folio-aleatorio.sql
+@@s-15-fx-generar-num-placa-aleatorio.sql
+@@s-15-fx-generar-num-serie-aleatorio.sql
