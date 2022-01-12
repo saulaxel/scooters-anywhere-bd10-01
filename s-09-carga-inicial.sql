@@ -2,8 +2,7 @@
 --@Fecha creación:  2021-12-23
 --@Descripción:     Creación de entidades
 
---connect mp_proy_admin/mp
-
+prompt Insertando datos de prueba en las tablas
 
 -- Insertions to table marca
 insert into marca(marca_id, nombre)

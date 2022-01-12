@@ -2,6 +2,8 @@
 --@Fecha creación:  2021-12-08
 --@Descripción:     Creación de entidades
 
+prompt Creando tablas
+
 create table marca (
   marca_id number(10, 0) not null,
   nombre   varchar2(40 char) not null,

@@ -3,7 +3,7 @@ import cx_Oracle
 database = 'CURSOBD'
 username = 'mp_proy_admin'
 password = 'mp'
-host = '127.0.0.1'
+host = '172.17.0.2'
 service_name = 'CURSOBD.FI.UNAM'
 port = 1521
 encoding = 'UTF-8'

@@ -22,7 +22,7 @@ begin
         :new.scooter_id,
         :new.fecha_status
       );
-    
+
     when updating then
   -- Es un scooter preexistente. Revisamos si realmente
       -- cambió el valor de su status. En caso de no haber cambiado
@@ -30,7 +30,7 @@ begin
       if :new.status_id = :old.status_id then
         raise_application_error(-20001, 'El scooter ya tiene el estado indicado');
       end if;
-      
+
       insert into historial_status (
         historial_status_id,
         status_id,
@@ -43,7 +43,7 @@ begin
         :new.fecha_status
       );
   end case;
-  
+
   exception
     when others then
       raise;

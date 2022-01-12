@@ -7,10 +7,10 @@ declare
   v_marca_id          number;
   v_telefono_marca_id number;
   i                   number;
-  
+
   telefono            number;
   v_nombre            varchar2(40) := dbms_random.string('L', 6);
-  
+
   v_probando_error    number := 0;
 begin
   dbms_output.put_line('=====================================================');
@@ -28,7 +28,7 @@ begin
     v_nombre
   );
 
-  dbms_output.put_line('Insertando la cantidad'  
+  dbms_output.put_line('Insertando la cantidad'
   || ' permitida de valores en la entidad telefono_marca');
   for i in 1..3 loop
     select
@@ -50,7 +50,7 @@ begin
 
   end loop;
 
-  dbms_output.put_line('Insertando un valor más de la cantidad permitida' 
+  dbms_output.put_line('Insertando un valor más de la cantidad permitida'
   || ' de valores en la entidad telefono_marca');
   v_probando_error := 1;
   select
@@ -69,8 +69,8 @@ begin
     v_marca_id,
     telefono
   );
-  
-  raise_application_error(-20999, "No debe llegar a este punto);
+
+  raise_application_error(-20999, 'No debe llegar a este punto');
 
 exception
   when others then

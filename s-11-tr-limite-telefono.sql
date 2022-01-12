@@ -13,7 +13,7 @@ begin
   inner join telefono_marca tm
   on m.marca_id = tm.marca_id
   where :new.marca_id = tm.marca_id;
-  
+
   if v_telefono_marca >= 3 then
     raise_application_error(-20005, 'Una marca puede tener máximo 3 telefonos');
   end if;

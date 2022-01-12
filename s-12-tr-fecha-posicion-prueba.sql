@@ -4,9 +4,6 @@
 
 set serveroutput on
 
-@@s-15-fx-generar-num-serie-aleatorio.sql
-@@s-15-fx-generar-num-placa-aleatorio.sql
-
 declare
   v_record_already_exists number;
   v_scooter_id            scooter.scooter_id%type;
@@ -15,6 +12,8 @@ declare
   v_registro_scooter      scooter%rowtype;
 
   v_probando_error        number;
+  v_marca_id              number := 75;
+  v_status_id             number := 75;
 begin
   v_probando_error := 0;
   dbms_output.put_line('=====================================================');
@@ -38,8 +37,8 @@ begin
     v_num_placa,
     'contrasenia123',
     50,
-    75,
-    75
+    v_marca_id,
+    v_status_id
   );
 
   select * into v_registro_scooter
@@ -85,8 +84,8 @@ begin
     v_num_placa,
     'contrasenia123',
     50,
-    75,
-    75,
+    v_marca_id,
+    v_status_id,
     19.5,
     -99.3
   );

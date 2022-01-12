@@ -2,7 +2,7 @@
 --@Fecha creación:  2021-12-24
 --@Descripción:     Creación de la secuencias necesarias
 
-connect mp_proy_admin/mp
+prompt Creando secuencias
 
 create sequence scooter_zona_seq
 start with 75

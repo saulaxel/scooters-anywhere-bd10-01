@@ -4,7 +4,7 @@
 --                  scooter_zona y Scooter
 
 create or replace trigger trg_limite_scooter_zona before
-  insert on scooter
+  insert on scooter_zona
   for each row
 declare
   v_num_scooters  number;
@@ -14,7 +14,7 @@ begin
   inner join scooter_zona sz
   on s.scooter_id = sz.scooter_id
   where :new.scooter_id = sz.scooter_id;
-  
+
   if v_num_scooters >= 3 then
     raise_application_error(-20005, 'Un scooter solo puede tener 3 zonas');
   end if;

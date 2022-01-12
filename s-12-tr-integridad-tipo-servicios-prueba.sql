@@ -9,6 +9,9 @@ create or replace procedure prueba_integridad_servicio_viaje is
   v_primera_prueba_completada number(1);
   v_folio_aleatorio           varchar(13);
   v_folio_already_exists      number;
+
+  v_usuario_id                number := 75;
+  v_scooter_id                number := 75;
 begin
   v_primera_prueba_completada := 0;
   -- Servicio padre, de tipo 'Viaje' para hacer pruebas
@@ -19,16 +22,16 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'V'
   );
 
   -- La inserción en la tabla servicio_viaje debe de salir correcta
   -- mientras que una inserción en cualquier otro servicio no debe ser válida
   dbms_output.put_line('Haciendo una insersión válida en servicio_viaje');
-  
+
   v_folio_aleatorio := generar_folio_aleatorio();
-  
+
   insert into servicio_viaje(
     servicio_id,
     scooter_id,
@@ -36,15 +39,15 @@ begin
     fecha_inicio
   ) values (
     servicio_seq.currval,
-    75,
+    v_scooter_id,
     v_folio_aleatorio,
     sysdate
   );
-  
+
   dbms_output.put_line('La inserción en servicio_viaje ha sido exitosa');
-  
+
   v_primera_prueba_completada := 1;
-  
+
   -- Servicio padre, de tipo 'Viaje' para hacer pruebas
   insert into servicio (
     servicio_id,
@@ -52,10 +55,10 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'V'
   );
-  
+
   dbms_output.put_line('Probando insertar un servicio_renta asociado a un '
                     || 'padre de tipo viaje');
 
@@ -66,11 +69,11 @@ begin
     numero_dias
   ) values (
     servicio_seq.currval,
-    75,
+    v_scooter_id,
     sysdate,
     1
   );
-  
+
 exception
   when others then
     if sqlcode = -20003 and v_primera_prueba_completada = 1 then
@@ -89,6 +92,9 @@ end;
 -- Probar inserciones válidas e inválidas en servicio_renta
 create or replace procedure prueba_integridad_servicio_renta is
   v_primera_prueba_completada number(1);
+
+  v_usuario_id                number := 75;
+  v_scooter_id                number := 75;
 begin
   v_primera_prueba_completada := 0;
   -- Servicio padre, de tipo 'Renta' para hacer pruebas
@@ -98,7 +104,7 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'R'
   );
 
@@ -112,16 +118,16 @@ begin
     numero_dias
   ) values (
     servicio_seq.currval,
-    75,
+    v_scooter_id,
     sysdate,
     1
   );
-  
-  
+
+
   dbms_output.put_line('La inserción en servicio_viaje ha sido exitosa');
-  
+
   v_primera_prueba_completada := 1;
-  
+
   -- Servicio padre, de tipo 'Viaje' para hacer pruebas
   insert into servicio (
     servicio_id,
@@ -129,10 +135,10 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'R'
   );
-  
+
   dbms_output.put_line('Probando insertar un servicio_renta asociado a un '
                     || 'padre de tipo viaje');
 
@@ -145,7 +151,7 @@ begin
     1234,
     'no importa'
   );
-  
+
 exception
   when others then
     if sqlcode = -20003 and v_primera_prueba_completada = 1 then
@@ -166,6 +172,9 @@ create or replace procedure prueba_integridad_servicio_recarga is
   v_primera_prueba_completada number(1);
   v_folio_aleatorio           varchar(13);
   v_folio_already_exists      number;
+
+  v_usuario_id                number := 75;
+  v_scooter_id                number := 75;
 begin
   v_primera_prueba_completada := 0;
   -- Servicio padre, de tipo 'Recarga' para hacer pruebas
@@ -175,7 +184,7 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'C'
   );
 
@@ -191,11 +200,11 @@ begin
     123456,
     'alheimer'
   );
-  
+
   dbms_output.put_line('La inserción en servicio_viaje ha sido exitosa');
-  
+
   v_primera_prueba_completada := 1;
-  
+
   -- Servicio padre, de tipo 'Viaje' para hacer pruebas
   insert into servicio (
     servicio_id,
@@ -203,10 +212,10 @@ begin
     tipo
   ) values (
     servicio_seq.nextval,
-    75,
+    v_usuario_id,
     'V'
   );
-  
+
   dbms_output.put_line('Probando insertar un servicio_renta asociado a un '
                     || 'padre de tipo viaje');
 
@@ -219,11 +228,11 @@ begin
     fecha_inicio
   ) values (
     servicio_seq.currval,
-    75,
+    v_scooter_id,
     v_folio_aleatorio,
     sysdate
   );
-  
+
 exception
   when others then
     if sqlcode = -20003 and v_primera_prueba_completada = 1 then
@@ -250,10 +259,10 @@ begin
   dbms_output.put_line('=====================================================');
   dbms_output.put_line('Probando trigger para servicio recarga');
   prueba_integridad_servicio_recarga();
-  
+
   dbms_output.put_line('');
   dbms_output.put_line('Las pruebas se han completado de forma exitosa');
-  
+
 exception
   when others then
     dbms_output.put_line('Hay errores en las pruebas');

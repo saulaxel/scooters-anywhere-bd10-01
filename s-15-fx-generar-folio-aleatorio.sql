@@ -10,16 +10,16 @@ create or replace function generar_folio_aleatorio
   v_longitud_folio        number;
 begin
   select data_length into v_longitud_folio
-  from user_tab_columns 
+  from user_tab_columns
   where table_name in ('SERVICIO_VIAJE') and column_name = 'FOLIO';
 
   loop
     select dbms_random.string('U', v_longitud_folio) into v_folio_aleatorio from dual;
-  
+
     select count(*) into v_folio_already_exists
     from servicio_viaje
     where folio = v_folio_aleatorio;
-    
+
     exit when v_folio_already_exists = 0;
   end loop;
 
