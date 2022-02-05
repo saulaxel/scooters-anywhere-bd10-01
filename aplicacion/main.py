@@ -10,6 +10,7 @@ import os
 import cx_Oracle
 import connection_config
 
+
 def get_connection():
     connection = cx_Oracle.connect(
         user=connection_config.username,
@@ -59,8 +60,9 @@ class Root(FloatLayout):
               75,
               :blobImagen
             )"""
-            cursor.setinputsizes (blobImagen = cx_Oracle.BLOB)
-            cursor.execute(SQL_INSERT_IMAGEN, {'blobImagen': informacion_imagen})
+            cursor.setinputsizes(blobImagen=cx_Oracle.BLOB)
+            cursor.execute(SQL_INSERT_IMAGEN,
+                           {'blobImagen': informacion_imagen})
             connection.commit()
 
         self.dismiss_popup()
@@ -82,4 +84,3 @@ Factory.register('LoadDialog', cls=LoadDialog)
 
 if __name__ == '__main__':
     CargadorImagenes().run()
-

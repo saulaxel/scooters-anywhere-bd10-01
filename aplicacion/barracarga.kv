@@ -1,0 +1,11 @@
+EjemploBarraCarga:
+
+<EjemploBarraCarga>:
+  BoxLayout:
+    orientation: "vertical"
+    Button:
+      text: "Iniciar barra de carga"
+      on_press: root.animar_barra_carga()
+    ProgressBar:
+      max: 100
+      value: root.progress_bar_value
